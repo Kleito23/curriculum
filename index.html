@@ -29,6 +29,170 @@ initial-scale=1.0">
             <h2>Resumen</h2>
             <p>Breve descripción de tus habilidades y experiencia.</p>
         </section>
+        <section id="etiquetas-semanticas-texto">
+            <h2>Etiquetas semánticas de texto</h2>
+            <p>
+                Este es un párrafo con un enlace a un sitio web:
+                <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">Visitar Example.com</a>.
+            </p>
+
+            <h3>Lista ordenada</h3>
+            <ol>
+                <li>Primer elemento</li>
+                <li>Segundo elemento</li>
+                <li>Tercer elemento</li>
+            </ol>
+
+            <h3>Lista no ordenada</h3>
+            <ul>
+                <li>Elemento A</li>
+                <li>Elemento B</li>
+                <li>Elemento C</li>
+            </ul>
+
+            <h3>Tabla sin bordes</h3>
+            <table style="border-collapse: collapse; border: none;">
+                <tr>
+                    <th style="border: none; padding: 0.5rem 1rem; text-align: left;">Elemento</th>
+                    <th style="border: none; padding: 0.5rem 1rem; text-align: left;">Etiqueta</th>
+                    <th style="border: none; padding: 0.5rem 1rem; text-align: left;">Ejemplo</th>
+                </tr>
+                <tr>
+                    <th scope="row" style="border: none; padding: 0.5rem 1rem; text-align: left;">Párrafo</th>
+                    <td style="border: none; padding: 0.5rem 1rem;">p</td>
+                    <td style="border: none; padding: 0.5rem 1rem;">Texto continuo dentro de un bloque.</td>
+                </tr>
+                <tr>
+                    <th scope="row" style="border: none; padding: 0.5rem 1rem; text-align: left;">Lista ordenada</th>
+                    <td style="border: none; padding: 0.5rem 1rem;">ol</td>
+                    <td style="border: none; padding: 0.5rem 1rem;">Elementos con un orden específico.</td>
+                </tr>
+                <tr>
+                    <th scope="row" style="border: none; padding: 0.5rem 1rem; text-align: left;">Lista no ordenada</th>
+                    <td style="border: none; padding: 0.5rem 1rem;">ul</td>
+                    <td style="border: none; padding: 0.5rem 1rem;">Elementos presentados sin jerarquía numérica.</td>
+                </tr>
+            </table>
+        </section>
+        <section id="etiquetas-multimedia">
+            <h2>Elementos multimedia para un currículum vitae</h2>
+
+            <h3>Mapa de Google Maps</h3>
+            <p>Úsalo para mostrar tu ciudad, zona de trabajo o ubicación profesional.</p>
+            <iframe
+                src="https://www.google.com/maps?q=Madrid%2C%20Espa%C3%B1a&output=embed"
+                width="100%"
+                height="320"
+                style="border: 0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <h3>Imagen con placeholder</h3>
+            <p>Es ideal para una foto de perfil o una imagen profesional de presentación.</p>
+            <figure>
+                <img src="https://placehold.co/800x450?text=Tu+Foto+de+Perfil" alt="Placeholder para una foto de perfil profesional" width="800" height="450">
+                <figcaption>Ejemplo con una imagen placeholder pensada para la foto de un currículum.</figcaption>
+            </figure>
+
+            <h3>Video de YouTube</h3>
+            <p>Úsalo para una breve presentación personal, portafolio o demo de proyectos.</p>
+            <p>URL del video: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a></p>
+            <iframe
+                width="100%"
+                height="320"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Video de YouTube de ejemplo"
+                style="border: 0;"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </section>
+        <section id="formulario-cv">
+            <h2>Formulario para currículum vitae</h2>
+            <p>Este formulario puede usarse para recopilar datos básicos de contacto y preferencias profesionales.</p>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+                </p>
+
+                <p>
+                    <label for="area">Área profesional</label>
+                    <select id="area" name="area">
+                        <option value="">Selecciona una opción</option>
+                        <option value="desarrollo-web">Desarrollo web</option>
+                        <option value="diseno-ui">Diseño UI/UX</option>
+                        <option value="analisis-datos">Análisis de datos</option>
+                    </select>
+                </p>
+
+                <fieldset>
+                    <legend>Modalidad de trabajo preferida</legend>
+                    <p>
+                        <label>
+                            <input type="radio" name="modalidad" value="presencial">
+                            Presencial
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="modalidad" value="hibrido">
+                            Híbrido
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="modalidad" value="remoto">
+                            Remoto
+                        </label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Habilidades destacadas</legend>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="habilidades" value="html-css">
+                            HTML y CSS
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="habilidades" value="javascript">
+                            JavaScript
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="habilidades" value="react">
+                            React
+                        </label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <label for="idiomas">Idiomas</label>
+                    <select id="idiomas" name="idiomas" multiple size="4">
+                        <option value="espanol">Español</option>
+                        <option value="ingles">Inglés</option>
+                        <option value="frances">Francés</option>
+                        <option value="portugues">Portugués</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="descripcion">Descripción profesional</label>
+                    <textarea id="descripcion" name="descripcion" rows="5" placeholder="Escribe un resumen breve de tu perfil profesional"></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar formulario</button>
+                </p>
+            </form>
+        </section>
         <section id="experiencia">
             <h2>Experiencia</h2>
         </section>
