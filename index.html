@@ -17,23 +17,22 @@ initial-scale=1.0">
     <nav>
         <ul>
             <li><a href="#resumen">Resumen</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#etiquetas-multimedia">Más de mí</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#referencias">Referencias</a></li>
+            <li><a href="#formulario-cv">Contacto</a></li>
         </ul>
     </nav>
     <main>
         <section id="resumen">
             <h2 class="subtitle">Resumen</h2>
-            <p>Breve descripción de tus habilidades y experiencia.</p>
-        </section>
-        <section id="etiquetas-semanticas-texto">
-            <h2 class="subtitle">Etiquetas semánticas de texto</h2>
-
-            <h3>Resumen profesional</h3>
             <p>Soy desarrollador web con más de 5 años de experiencia en la creación de aplicaciones responsivas, accesibles y orientadas al rendimiento. Tengo experiencia liderando equipos pequeños, diseñando arquitecturas front-end y colaborando con producto para entregar soluciones con impacto.</p>
+        </section>
+        <section id="habilidades">
+            <h2 class="subtitle">Habilidades</h2>
 
             <h3>Experiencias clave</h3>
             <ol>
@@ -73,10 +72,15 @@ initial-scale=1.0">
             <p>Si quieres, puedo personalizar estos textos con tus años de experiencia reales, nombres de empresas o proyectos concretos.</p>
         </section>
         <section id="etiquetas-multimedia">
-            <h2 class="subtitle">Elementos multimedia para un currículum vitae</h2>
+            <h2 class="subtitle">Más de mi</h2>
+
+            <h3>Foto Personal</h3>
+            <figure>
+                <img id="photo" src="../Foto-linkedin.png" alt="Foto de perfil profesional" width="800" height="450">
+                <figcaption>Foto personal para el currículum vitae.</figcaption>
+            </figure>
 
             <h3>Mapa de Google Maps</h3>
-            <p>Úsalo para mostrar tu ciudad, zona de trabajo o ubicación profesional.</p>
             <iframe
                 src="https://www.google.com/maps?q=Madrid%2C%20Espa%C3%B1a&output=embed"
                 width="100%"
@@ -87,12 +91,7 @@ initial-scale=1.0">
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
 
-            <h3>Imagen con placeholder</h3>
-            <p>Es ideal para una foto de perfil o una imagen profesional de presentación.</p>
-            <figure>
-                <img id="photo" src="https://placehold.co/800x450?text=Tu+Foto+de+Perfil" alt="Placeholder para una foto de perfil profesional" width="800" height="450">
-                <figcaption>Ejemplo con una imagen placeholder pensada para la foto de un currículum.</figcaption>
-            </figure>
+            
 
             <h3>Video de YouTube</h3>
             <p>Úsalo para una breve presentación personal, portafolio o demo de proyectos.</p>
@@ -107,9 +106,56 @@ initial-scale=1.0">
                 allowfullscreen>
             </iframe>
         </section>
+        
+        <section id="experiencia">
+            <h2 class="subtitle">Experiencia</h2>
+            <article>
+                <h3>Desarrollador Web Front-End</h3>
+                <p>Freelance | 2022 - Actualidad</p>
+                <p>Desarrollo de interfaces responsivas con HTML, CSS y JavaScript, optimización de componentes y mejora de accesibilidad.</p>
+            </article>
+
+        </section>
+        <section id="educacion">
+            <h2 class="subtitle">Educación</h2>
+            <article>
+                <h3>Bachiller</h3>
+                <p>Unidad Educativa Claire Bucaram de Aivas | 2012 - 2018</p>
+            </article>
+            <article>
+                <h3>Ingeniería en Computación</h3>
+                <p>Escuela Superior Politécnica del Litoral | 2024 - 2028</p>
+            </article>
+        </section>
+        <section id="proyectos">
+            <h2 class="subtitle">Proyectos</h2>
+            <article>
+                <h3>Portafolio personal</h3>
+                <p>Sitio web para presentar proyectos, experiencia y datos de contacto de forma clara y responsive.</p>
+            </article>
+        </section>
+        <section id="referencias">
+            <h2 class="subtitle">Referencias</h2>
+            <article>
+                <blockquote>Su liderazgo transformó nuestro proceso de entrega.</blockquote>
+                <p><strong>María López</strong>, Directora de Proyectos.</p>
+                <p>Coordinó proyectos ágiles durante 2 años, mejorando la eficiencia del equipo y cumpliendo plazos críticos.</p>
+            </article>
+
+            <article>
+                <blockquote>Demostró una habilidad excepcional para resolver problemas complejos.</blockquote>
+                <p><strong>Juan Pérez</strong>, Jefe de Ingeniería.</p>
+                <p>Lideró la arquitectura técnica de varias funcionalidades clave y siempre entregó soluciones robustas y documentadas.</p>
+            </article>
+
+            <article>
+                <blockquote>Su comunicación y trabajo en equipo elevaron la calidad del producto.</blockquote>
+                <p><strong>Ana Martín</strong>, Product Manager.</p>
+                <p>Colaboró estrechamente con producto y diseño para priorizar características que aumentaron la satisfacción del usuario.</p>
+            </article>
+        </section>
         <section id="formulario-cv">
-            <h2 class="subtitle">Formulario para currículum vitae</h2>
-            <p>Este formulario puede usarse para recopilar datos básicos de contacto y preferencias profesionales.</p>
+            <h2 class="subtitle">Contacto</h2>
 
             <form action="#" method="post">
                 <p>
@@ -171,15 +217,33 @@ initial-scale=1.0">
                     </p>
                 </fieldset>
 
-                <p>
-                    <label for="idiomas">Idiomas</label>
-                    <select id="idiomas" name="idiomas" multiple size="4">
-                        <option value="espanol">Español</option>
-                        <option value="ingles">Inglés</option>
-                        <option value="frances">Francés</option>
-                        <option value="portugues">Portugués</option>
-                    </select>
-                </p>
+                <fieldset>
+                    <legend>Idiomas</legend>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="idiomas" value="espanol">
+                            Español
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="idiomas" value="ingles">
+                            Inglés
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="idiomas" value="frances">
+                            Francés
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="idiomas" value="portugues">
+                            Portugués
+                        </label>
+                    </p>
+                </fieldset>
 
                 <p>
                     <label for="descripcion">Descripción profesional</label>
@@ -191,52 +255,12 @@ initial-scale=1.0">
                 </p>
             </form>
         </section>
-        <section id="experiencia">
-            <h2 class="subtitle">Experiencia</h2>
-        </section>
-        <section id="educacion">
-            <h2 class="subtitle">Educación</h2>
-        </section>
-        <section id="habilidades">
-            <h2 class="subtitle">Habilidades</h2>
-        </section>
-        <section id="proyectos">
-            <h2 class="subtitle">Proyectos</h2>
-        </section>
-        <section id="testimonios">
-            <h2 class="subtitle">Testimonios</h2>
-            <div class="testimonials">
-                <figure>
-                    <blockquote>Su liderazgo transformó nuestro proceso de entrega.</blockquote>
-                    <figcaption>
-                        <p><strong>María López</strong>, Directora de Proyectos.</p>
-                        <p>Coordinó proyectos ágiles durante 2 años, mejorando la eficiencia del equipo y cumpliendo plazos críticos.</p>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <blockquote>Demostró una habilidad excepcional para resolver problemas complejos.</blockquote>
-                    <figcaption>
-                        <p><strong>Juan Pérez</strong>, Jefe de Ingeniería.</p>
-                        <p>Lideró la arquitectura técnica de varias funcionalidades clave y siempre entregó soluciones robustas y documentadas.</p>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <blockquote>Su comunicación y trabajo en equipo elevaron la calidad del producto.</blockquote>
-                    <figcaption>
-                        <p><strong>Ana Martín</strong>, Product Manager.</p>
-                        <p>Colaboró estrechamente con producto y diseño para priorizar características que aumentaron la satisfacción del usuario.</p>
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
     </main>
     <footer>
-        <p>© Tu Nombre - 2023</p>
+        <p>© Kleber Nieto - 2026</p>
         <ul>
-            <li><a href="https://www.linkedin.com/in/tunombre">LinkedIn</a></li>
-            <li><a href="https://github.com/tunombre">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/kleber-nieto/">LinkedIn</a></li>
+            <li><a href="https://github.com/Kleito23">GitHub</a></li>
         </ul>
     </footer>
 </body>

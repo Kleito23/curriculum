@@ -22,13 +22,60 @@ h1 {
     text-transform: uppercase;
 }
 
+footer {
+    margin-top: 2rem;
+    padding: 1.25rem 1rem;
+    border-top: 1px solid #cedddd;
+    background: linear-gradient(180deg, #f8fbfc 0%, #eef5f6 100%);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
 footer p {
-    text-align: right;
-    font-style: italic;
+    margin: 0;
+    text-align: left;
+    font-style: normal;
+    color: #4f5f66;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+footer a {
+    display: inline-block;
+    padding: 0.55rem 0.9rem;
+    border: 1px solid #cedddd;
+    border-radius: 999px;
+    color: #1f4d57;
+    text-decoration: none;
+    background-color: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+footer a:hover {
+    background-color: #dff1f4;
+    box-shadow: 0 4px 12px rgba(31, 77, 87, 0.12);
+    transform: translateY(-1px);
 }
 
 nav > ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
 }
 
 section {
@@ -45,4 +92,169 @@ section {
    -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
    -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 1rem 1rem;
+    background: linear-gradient(180deg, #f6fcfc 0%, #eef7f8 100%);
+    border-bottom: 1px solid #e6f0f2;
+}
+
+header h1 {
+    margin: 0;
+    color: #0b3f44;
+    font-size: clamp(1.4rem, 2.4vw, 2rem);
+    letter-spacing: 0.4px;
+}
+
+header p {
+    margin: 0;
+    color: #2f5960;
+    font-weight: 600;
+    font-size: 0.95rem;
+    opacity: 0.95;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 0.6rem 1rem;
+}
+
+nav > ul > li > a {
+    display: inline-block;
+    padding: 0.45rem 0.85rem;
+    border-radius: 999px;
+    color: #0b4b52;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: background-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+    background-color: #e6f9fa;
+    border-color: #cfe9ec;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(31, 77, 87, 0.06);
+}
+
+@media (max-width: 640px) {
+    header h1 { font-size: 1.35rem; }
+    nav > ul { gap: 0.5rem; flex-wrap: wrap; }
+    nav > ul > li > a { padding: 0.4rem 0.6rem; }
+}
+
+section#formulario-cv {
+    background: linear-gradient(180deg, #fbfdfd 0%, #f4f8f9 100%);
+}
+
+section#formulario-cv > p {
+    color: #5c6b72;
+}
+
+section#formulario-cv form {
+    background-color: #ffffff;
+    border: 1px solid #d8e4e6;
+    border-radius: 14px;
+    padding: 1.25rem;
+    box-shadow: 0 10px 24px rgba(31, 77, 87, 0.08);
+}
+
+section#formulario-cv form p,
+section#formulario-cv form fieldset {
+    margin: 0;
+}
+
+section#formulario-cv form p {
+    display: grid;
+    gap: 0.45rem;
+}
+
+section#formulario-cv label,
+section#formulario-cv legend {
+    color: #28444c;
+    font-weight: 600;
+}
+
+section#formulario-cv input,
+section#formulario-cv select,
+section#formulario-cv textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem 0.9rem;
+    border: 1px solid #c9d7da;
+    border-radius: 10px;
+    background-color: #fdfefe;
+    color: #21343a;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+section#formulario-cv input:focus,
+section#formulario-cv select:focus,
+section#formulario-cv textarea:focus {
+    outline: none;
+    border-color: #7ab6c1;
+    box-shadow: 0 0 0 3px rgba(122, 182, 193, 0.22);
+    background-color: #ffffff;
+}
+
+section#formulario-cv fieldset {
+    border: 1px solid #d8e4e6;
+    border-radius: 12px;
+    padding: 1rem;
+    display: grid;
+    gap: 0.85rem;
+}
+
+section#formulario-cv fieldset p {
+    display: block;
+}
+
+section#formulario-cv fieldset legend {
+    padding: 0 0.4rem;
+}
+
+section#formulario-cv input[type="radio"],
+section#formulario-cv input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+section#formulario-cv button {
+    justify-self: start;
+    padding: 0.8rem 1.25rem;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #1f4d57 0%, #3d7c87 100%);
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 18px rgba(31, 77, 87, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+section#formulario-cv button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 22px rgba(31, 77, 87, 0.22);
+    filter: brightness(1.03);
+}
+
+section#referencias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+section#referencias > .subtitle {
+    flex: 0 0 100%;
+}
+
+section#referencias > article {
+    flex: 1;
 }
